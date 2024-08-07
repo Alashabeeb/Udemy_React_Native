@@ -10,8 +10,8 @@ const App = () => {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator initialRouteName="Search">
-        <Stack.Screen name="Search" component={SearchScreen} />
-        <Stack.Screen name="ResultsShow" component={ResultsShowScreen} />
+        <Stack.Screen name="Search" options={{ headerShown: false }} component={SearchScreen} />
+        <Stack.Screen name="ResultsShow" options={{ headerShown: false }} component={ResultsShowScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
